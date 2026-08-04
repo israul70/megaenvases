@@ -1,340 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mega Envases S.A. de C.V. | Los mejores frascos a los mejores precios</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-dark: #0f1418;
-            --bg-card: #182026;
-            --primary-light: #e2f1f8;
-            --accent-blue: #7fcbf2;
-            --accent-green: #3d8b40;
-            --accent-green-bright: #4caf50;
-            --text-main: #e0e6ed;
-            --text-muted: #9fb0c1;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Envases S.A. de C.V. | Los mejores frascos a los mejores precios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f1418;
+            --bg-card: #182026;
+            --primary-light: #e2f1f8;
+            --accent-blue: #7fcbf2;
+            --accent-green: #3d8b40;
+            --accent-green-bright: #4caf50;
+            --text-main: #e0e6ed;
+            --text-muted: #9fb0c1;
+        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
 
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(15, 20, 24, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            z-index: 1000;
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 20, 24, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 1000;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-        .logo {
-            font-family: 'Cinzel', serif;
-            font-size: 1.5rem;
-            color: var(--primary-light);
-            text-decoration: none;
-            letter-spacing: 2px;
-        }
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
 
-        .logo span {
-            color: var(--accent-green-bright);
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            font-size: 1.2rem;
-            display: block;
-            margin-top: -5px;
-        }
+        .logo span {
+            color: var(--accent-blue);
+        }
 
-        nav a {
-            color: var(--text-main);
-            text-decoration: none;
-            margin-left: 2rem;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
 
-        nav a:hover {
-            color: var(--accent-blue);
-        }
+        nav a:hover {
+            color: var(--accent-blue);
+        }
 
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 8rem 2rem 4rem;
-            background: radial-gradient(circle at center, #1c2833 0%, #0f1418 100%);
-            position: relative;
-        }
+        .hero {
+            padding: 160px 5% 100px;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a2632 0%, var(--bg-dark) 70%);
+        }
 
-        .hero-content h1 {
-            font-family: 'Cinzel', serif;
-            font-size: 3.5rem;
-            color: var(--primary-light);
-            text-shadow: 0 0 20px rgba(127, 203, 242, 0.3);
-            margin-bottom: 0.5rem;
-        }
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
 
-        .hero-content .subtitle {
-            color: var(--accent-green-bright);
-            font-size: 2rem;
-            font-weight: 300;
-            margin-bottom: 1.5rem;
-        }
+        .hero p.subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
 
-        .hero-content p {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            max-width: 650px;
-            margin: 0 auto 2.5rem;
-        }
+        .hero p.desc {
+            max-width: 650px;
+            margin: 0 auto 35px;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
 
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2.5rem;
-            background: linear-gradient(135deg, var(--accent-green), var(--accent-green-bright));
-            color: #fff;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--accent-green);
+            color: #ffffff;
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
-        }
+        .btn-primary:hover {
+            background-color: var(--accent-green-bright);
+            transform: translateY(-2px);
+        }
 
-        section {
-            padding: 5rem 10%;
-        }
+        section {
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-        .section-title {
-            font-family: 'Cinzel', serif;
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 3rem;
-            color: var(--primary-light);
-            position: relative;
-        }
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffffff;
+            position: relative;
+        }
 
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 2px;
-            background: var(--accent-blue);
-            margin: 0.8rem auto 0;
-        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: var(--accent-blue);
+            margin: 15px auto 0;
+        }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
+        .vision-box {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-left: 4px solid var(--accent-blue);
+            padding: 30px;
+            border-radius: 6px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: var(--primary-light);
+        }
 
-        .card {
-            background: var(--bg-card);
-            padding: 2.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: transform 0.3s, border-color 0.3s;
-        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
 
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-blue);
-        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 6px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
 
-        .card h3 {
-            color: var(--accent-blue);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+        }
 
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
+        .card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            color: var(--accent-blue);
+            margin-bottom: 15px;
+        }
 
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            background: var(--bg-card);
-            padding: 3rem;
-            border-radius: 12px;
-        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
 
-        .contact-info h3 {
-            color: var(--accent-green-bright);
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-info ul {
-            list-style: none;
-        }
-
-        .contact-info li {
-            margin-bottom: 1.2rem;
-            color: var(--text-muted);
-        }
-
-        .contact-info strong {
-            color: var(--text-main);
-            display: inline-block;
-            min-width: 150px;
-        }
-
-        .contact-link {
-            color: var(--accent-blue);
-            text-decoration: none;
-            transition: color 0.3s, text-decoration 0.3s;
-        }
-
-        .contact-link:hover {
-            color: var(--accent-green-bright);
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: #080b0d;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.5rem; }
-            .hero-content .subtitle { font-size: 1.5rem; }
-            nav { display: none; }
-        }
-    </style>
+        footer {
+            background: #080b0e;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            padding: 30px 5%;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <a href="#" class="logo">MEGA<span>envases S.A. de C.V.</span></a>
-        <nav>
-            <a href="#vision">Nosotros</a>
-            <a href="#vidrio">¿Por qué Vidrio?</a>
-            <a href="#soluciones">Soluciones</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+    <header>
+        <a href="#" class="logo">MEGA <span>ENVASES</span></a>
+        <nav>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#porque-vidrio">¿Por qué Vidrio?</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>MEGA</h1>
-            <div class="subtitle">envases S.A. de C.V.</div>
-            <p>Los mejores frascos a los mejores precios. El envase perfecto no solo protege tu producto, es tu mejor herramienta de venta.</p>
-            <a href="#contacto" class="btn">Cotizar Ahora</a>
-        </div>
-    </section>
+    <section class="hero">
+        <h1>MEGA ENVASES</h1>
+        <p class="subtitle">envases S.A. de C.V.</p>
+        <p class="desc">Los mejores frascos a los mejores precios. El envase perfecto no solo protege tu producto, es tu mejor herramienta de venta.</p>
+        <a href="#contacto" class="btn-primary">Cotizar Ahora</a>
+    </section>
 
-    <section id="vision">
-        <h2 class="section-title">Nuestra Visión</h2>
-        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
-            <p style="font-size: 1.1rem; line-height: 1.8;">Trabajar en equipo con nuestros clientes y colaboradores externos, haciendo uso de nuestro talento y creatividad para lograr objetivos sólidos que se mantengan siempre a la vanguardia del mercado.</p>
-        </div>
-    </section>
+    <section id="nosotros">
+        <h2 class="section-title">Nuestra Visión</h2>
+        <div class="vision-box">
+            Trabajar en equipo con nuestros clientes y colaboradores externos, haciendo uso de nuestro talento y creatividad para lograr objetivos sólidos que se mantengan siempre a la vanguardia del mercado.
+        </div>
+    </section>
 
-    <section id="vidrio">
-        <h2 class="section-title">¿Por qué Elegir Vidrio?</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Inerte e Higiénico</h3>
-                <p>El vidrio es un material puro que garantiza la máxima higiene sin reaccionar químicamente con el producto contenido.</p>
-            </div>
-            <div class="card">
-                <h3>Conserva la Calidad</h3>
-                <p>No altera el sabor de alimentos ni bebidas, y mantiene intacta la composición original de medicamentos y perfumes.</p>
-            </div>
-            <div class="card">
-                <h3>Estrategia de Venta</h3>
-                <p>Un empaque de vidrio aporta distinción, valor percibido y elegancia en anaquel, protegiendo y destacando tu marca.</p>
-            </div>
-        </div>
-    </section>
+    <section id="porque-vidrio">
+        <h2 class="section-title">¿Por qué Elegir Vidrio?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Inerte e Higiénico</h3>
+                <p>El vidrio es un material puro que garantiza la máxima higiene sin reaccionar químicamente con el producto contenido.</p>
+            </div>
+            <div class="card">
+                <h3>Conserva la Calidad</h3>
+                <p>No altera el sabor de alimentos ni bebidas, y mantiene intacta la composición original de medicamentos y perfumes.</p>
+            </div>
+            <div class="card">
+                <h3>Estrategia de Venta</h3>
+                <p>Un empaque de vidrio aporta distinción, valor percibido y elegancia en anaquel, protegiendo y destacando tu marca.</p>
+            </div>
+        </div>
+    </section>
 
-    <section id="soluciones">
-        <h2 class="section-title">Nuestras Soluciones</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Envases Farmacéuticos</h3>
-                <p>Frascos de alta especificación para la industria médica y farmacéutica con estándares estrictos de conservación.</p>
-            </div>
-            <div class="card">
-                <h3>Accesorios Especializados</h3>
-                <p>Contamos con tapas, goteros, atomizadores y una amplia variedad de complementos para tus envases.</p>
-            </div>
-            <div class="card">
-                <h3>Atención Experta</h3>
-                <p>Te asesoramos de forma personalizada para seleccionar el envase ideal según tus necesidades de producción y venta.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <h2 class="section-title">Contacto</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Atención Personalizada</h3>
-                <ul>
-                    <li>
-                        <strong>Ventas:</strong>
-                        <a class="contact-link" href="tel:5554545869">55 5454 5869</a> | 
-                        <a class="contact-link" href="tel:5591807785">55 9180 7785</a>
-                    </li>
-                    <li>
-                        <strong>Auxiliar de Ventas:</strong>
-                        <a class="contact-link" href="tel:5567190559">55 6719 0559</a>
-                    </li>
-                    <li>
-                        <strong>Servicio al Cliente:</strong>
-                        <a class="contact-link" href="https://wa.me/5212203275363" target="_blank">+52 1 220 327 5363 (WhatsApp)</a>
-                    </li>
-                    <li>
-                        <strong>Correo Electrónico:</strong>
-                        <a class="contact-link" href="mailto:Ventas@megaenvases.com">Ventas@megaenvases.com</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <h3>Ubicación</h3>
-                <p style="margin-bottom: 1rem;">
-                    <a class="contact-link" href="https://maps.google.com/?q=Hidalgo+67,+Tizapan+San+Angel,+Progreso,+Alvaro+Obregon,+01080+Ciudad+de+Mexico,+CDMX" target="_blank">
-                        📍 Hidalgo 67, Tizapán San Ángel, Progreso, Álvaro Obregón, C.P. 01080, Ciudad de México, CDMX.
-                    </a>
-                </p>
-                <small style="color: var(--text-muted);">(Haz clic en la dirección para abrir la ubicación en Google Maps)</small>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2026 Mega Envases S.A. de C.V. Todos los derechos reservados.
-    </footer>
+    <footer id="contacto">
+        <p>&copy; 2026 Mega Envases S.A. de C.V. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
